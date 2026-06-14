@@ -34,7 +34,7 @@ void Framework::close_context(ContextId ctx)
     FeatureContext &rFtrCtx = m_contextData[ctx];
 
     // Clear all feature interfaces in the context
-    for (FIInstanceId &rFIInstId : rFtrCtx.finterSlots)
+    for (FIInstanceId &rFIInstId : rFtrCtx.finterSlots
     {
         if ( ! rFIInstId.has_value() )
         {
